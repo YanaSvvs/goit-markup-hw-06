@@ -753,7 +753,7 @@ border-top: none;
             left: 0;
             width: 100%;
             height: 100%;
-            display: flex;
+            display: block;
             align-items: center;
             justify-content: center;
             font-size: 16px;
@@ -768,4 +768,210 @@ border-top: none;
 }
 
 /* footer */
+
+.footer {
+    background: #2e2f42;
+    padding: 96px 0;
+}
+
+.logo-footer {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.logo-color-footer {
+    color: #f4f4fd;
+}
+
+.sectn-box {
+display: flex;
+flex-direction: column;
+gap: 72px;
+padding: 96px 16px auto 16px;
+}
+
+.footer-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    max-width: 264px;
+    text-align: left;
+}
+
+.ft-sect {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    text-align: center;
+    
+}
+
+.block-soc {
+    font-style: normal;
+    margin-left: 0;
+}
+
+.text-soc {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.ft-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: center;
+}
+
+.ft-icon {
+    height: 40px;
+}
+
+.ft-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ft-img:hover,
+.ft-img:focus {
+    background-color: #31d0aa;
+}
+
+.icon-soc {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    fill: #f4f4fd;
+}
+
+.sub-div {
+    margin-left: auto;
+}
+
+.lbl-mail {
+    border: 1px solid #fff;
+    color: #ffffff;
+    border-radius: 4px;
+    width: 288px;
+    height: 40px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    outline: transparent;
+    padding-left: 16px;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+}
+
+.lbl-mail placeholder {
+    color: #ffffff;
+}
+
+.lbl-mail:focus {
+    background-color: #31d0aa;
+}
+
+.type-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    border-radius: 4px;
+    padding: 8px 24px;
+    min-width: 165px;
+    height: 40px;
+    background-color: #4d5ae5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.type-btn:focus,
+.type-btn:hover {
+    background-color: #31d0aa;
+    fill: #fff;
+}
+
+.icon-send {
+    fill: #fff;
+    margin-left: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .ft-sect {
+        width: 584px;
+    }
+
+    .sectn-box {
+        flex-direction: row;
+        gap: 24px;
+        text-align: left;
+    }
+
+    .sub-div {
+        text-align: left;
+    }
+
+    .form-sub {
+        display: flex;
+        gap: 24px;
+    }
+
+    .lbl-mail {
+        width: 264px;
+    }
+
+    .type-btn {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .ft-sect {
+        flex-direction: row;
+        width: 100%;
+        gap: 80px;
+    }
+
+    .sectn-box {
+        gap: 120px;
+    }
+
+    .form-sub::placeholder {
+        opacity: 1;
+    }
+
+    .footer {
+        padding: 100px 0;
+    }
+}
+
+/* backdrop */
 
