@@ -290,7 +290,6 @@ background-color: transparent;
     margin-bottom: auto;
     width: 151px;
     height: 200px;
-   
 }
 
 .mobile-menu-nav-item {
@@ -304,13 +303,11 @@ background-color: transparent;
 .mobile-menu-nav-link {
     color: #2e2f42;
     display: block;
-    
 }
 
 .mobile-menu-adr {
     display: block;
     margin-bottom: 48px;
-    
 }
 
 .mobile-menu-adr-item {
@@ -653,15 +650,15 @@ justify-content: center;
 @media screen and (min-width: 1158px) {
     
     .team {
-            padding: 120px 0;
+    padding: 120px 0;
         }
 
     .team-list {
-        gap: 24px;
+    gap: 24px;
     }
 
     .team-list-people {
-        flex-basis: calc((100% - 72px) / 4);
+    flex-basis: calc((100% - 72px) / 4);
     }
 }
 
@@ -931,7 +928,6 @@ border-top: none;
 
     .sub-div {
         text-align: left;
-
     }
 
     .form-sub {
@@ -1049,10 +1045,6 @@ border-top: none;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal {
-    padding: 72px 24px 24px 24px;
-}
-
 .modal-text {
     font-weight: 500;
     font-size: 16px;
@@ -1069,7 +1061,6 @@ border-top: none;
 }
 
 .modal-form-label {
-    /*font-weight: 400;*/
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -1131,7 +1122,6 @@ border-top: none;
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    margin-right: 8px;
     fill: transparent;
     flex-shrink: 0;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
