@@ -789,13 +789,6 @@ border-top: none;
 .logo-color-footer {
     color: #f4f4fd;
 }
-/*
-.sectn-box {
-display: flex;
-flex-direction: column;
-gap: 72px;
-padding: 96px 16px auto 16px;
-}*/
 
 .footer-text {
     font-weight: 400;
@@ -803,25 +796,18 @@ padding: 96px 16px auto 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    word-wrap: break-word;
-    display: block;
-    width: 264px;
-    height: 72px;
+    max-width: 264px;
     text-align: left;
 }
 
 .ft-sect {
-    display: flex;
-    flex-direction: column;
-    gap: 72px;
+    display: block;
     text-align: center;
-    
 }
-/*
+
 .block-soc {
-    font-style: normal;
-    margin-left: 0;
-}*/
+    margin: 72px 0;
+}
 
 .text-soc {
     font-weight: 500;
@@ -867,8 +853,8 @@ padding: 96px 16px auto 16px;
     fill: #f4f4fd;
 }
 
-.sub-div {
-    margin-left: auto;
+.sectn-box {
+    max-width: 100%;
 }
 
 .lbl-mail {
@@ -930,6 +916,10 @@ padding: 96px 16px auto 16px;
 
 @media screen and (min-width: 768px) {
     .ft-sect {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 72px;
+        column-gap: 24px;
         width: 584px;
     }
 
@@ -937,11 +927,11 @@ padding: 96px 16px auto 16px;
         flex-direction: row;
         gap: 24px;
         text-align: left;
-        margin: 0;
     }
 
     .sub-div {
         text-align: left;
+
     }
 
     .form-sub {
@@ -956,21 +946,20 @@ padding: 96px 16px auto 16px;
     .type-btn {
         margin: 0;
     }
+
+    .block-soc {
+        margin: 0;
+    }
 }
 
 @media screen and (min-width: 1158px) {
     .ft-sect {
-        flex-direction: row;
         width: 100%;
-        gap: 80px;
-        padding: 0 15px;
-        margin: 0 auto;
-        align-items: baseline;
-        display: flex;
+        gap: unset;
     }
 
-    .sectn-box {
-        margin-right: 120px;
+    .block-soc {
+        margin: 0 80px 0 120px;
     }
 
     .form-sub::placeholder {
