@@ -789,13 +789,13 @@ border-top: none;
 .logo-color-footer {
     color: #f4f4fd;
 }
-
+/*
 .sectn-box {
 display: flex;
 flex-direction: column;
 gap: 72px;
 padding: 96px 16px auto 16px;
-}
+}*/
 
 .footer-text {
     font-weight: 400;
@@ -803,7 +803,10 @@ padding: 96px 16px auto 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    max-width: 264px;
+    word-wrap: break-word;
+    display: block;
+    width: 264px;
+    height: 72px;
     text-align: left;
 }
 
@@ -814,11 +817,11 @@ padding: 96px 16px auto 16px;
     text-align: center;
     
 }
-
+/*
 .block-soc {
     font-style: normal;
     margin-left: 0;
-}
+}*/
 
 .text-soc {
     font-weight: 500;
@@ -911,6 +914,7 @@ padding: 96px 16px auto 16px;
     cursor: pointer;
     border: none;
     transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 16px auto 0;
 }
 
 .type-btn:focus,
@@ -933,6 +937,7 @@ padding: 96px 16px auto 16px;
         flex-direction: row;
         gap: 24px;
         text-align: left;
+        margin: 0;
     }
 
     .sub-div {
@@ -958,10 +963,14 @@ padding: 96px 16px auto 16px;
         flex-direction: row;
         width: 100%;
         gap: 80px;
+        padding: 0 15px;
+        margin: 0 auto;
+        align-items: baseline;
+        display: flex;
     }
 
     .sectn-box {
-        gap: 120px;
+        margin-right: 120px;
     }
 
     .form-sub::placeholder {
