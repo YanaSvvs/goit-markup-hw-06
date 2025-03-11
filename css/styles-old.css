@@ -633,7 +633,7 @@ fill: #f4f4fd;
 
 /* #endregion backdrop*/
 
-/*old futer*/
+/*  #region old futer*/
 .footer {
     background: #2e2f42;
     padding: 96px 0;
@@ -843,3 +843,4 @@ padding: 96px 16px auto 16px;
         padding: 100px 0;
     }
 }
+/*  #endregion old futer*/
